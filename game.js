@@ -5,7 +5,6 @@ postToPage(score); // Print to the page
 createButton('grow', btnPress);
 changeTitle('Clicker Game');
 
-setInterval(btnPress, 2000);
 
 function btnPress() {
   score++;
@@ -13,14 +12,17 @@ function btnPress() {
 }
 postToPage(score); // Print to the page
 
-createButton('decreace', btnPress);
+createButton('decreace', btnPress2);
 changeTitle('Clicker Game');
 
-setInterval(btnPress, -1000);
+
 
 function btnPress() {
-  score--;
+  score++;
   postToPage(score);
 }
 
-
+function btnPress2() {
+  score--;
+  postToPage(score);
+} 
