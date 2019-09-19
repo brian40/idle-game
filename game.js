@@ -1,21 +1,30 @@
-var score = 1; // Create a variable to store the score in
+let score = 0;
+let button = new Button('Boo!');
+postToPage(score); // Print to the page
+button.hide()
 
-var title = new Title('Welcome to the Game'); // Create a title element
-var button = new Button('hello', btnPress);   // Create a button element
-var scr = new Text(score);                    // Create a text element
+setInterval(scoreIncrease, 1000);
+
+function scoreIncrease() { 
+  score++;  
+if(score > 10) {
+  button.show();
+ }
+
+}
 
 createButton('grow', btnPress);
-changeTitle('Clicker Game');
+//changeTitle('Clicker Game');
 
 
 function btnPress() {
-  score++;         // Increase the score
-  scr.edit(score); // Update the page with the new score
+  score++;
+  postToPage(score);
 }
 postToPage(score); // Print to the page
 
 createButton('decreace', btnPress2);
-changeTitle('Clicker Game');
+//changeTitle('Clicker Game');
 
 
 
@@ -26,5 +35,5 @@ function btnPress() {
 
 function btnPress2() {
   score--;
-  postToPage(score);s
+  postToPage(score);
 } 
