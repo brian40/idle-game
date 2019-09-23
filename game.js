@@ -1,5 +1,5 @@
 let score = 0;
-let button = new Button('OH HI MARK');
+let button = new Button('   OH HI MARK  ');
 postToPage(score); // Print to the page
 button.hide()
 
