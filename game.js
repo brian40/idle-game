@@ -1,12 +1,15 @@
-let title = new Title('Welcome to the game')
+var title = new Title('Welcome to the game')
 let score = 0;
-let button = new Button('OH HI MARK');
-let scr = new Text(score);
+let button1 = new Button('OH HI MARK');
+let button2 = new Button('GROW'); 
+let button3 = new Button('DECREASE');
 
+let scr = new Text(score);
+changeFont('Impact');
 
 button.hide()
 
-setInterval(scoreIncrease, 1000);
+setInterval(scoreIncrease, 10)
 
 function scoreIncrease() { 
   score++;  
@@ -16,23 +19,14 @@ if(score > 10) {
 
 }
 
-createButton('grow', btnPress);
-//changeTitle('Clicker Game');
-
-
 function btnPress() {
   score++;
  (score);
 }
 
-
-createButton('decreace', btnPress2);
-//changeTitle('Clicker Game');
-
-
-
 function btnPress() {
   score++;
+  (score);
   scr.edit(score);
 }
 
