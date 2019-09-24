@@ -1,6 +1,9 @@
+let title = new Title('Welcome to the game')
 let score = 0;
-let button = new Button('   OH HI MARK  ');
-postToPage(score); // Print to the page
+let button = new Button('OH HI MARK');
+let scr = new Text(score);
+
+
 button.hide()
 
 setInterval(scoreIncrease, 1000);
@@ -19,9 +22,9 @@ createButton('grow', btnPress);
 
 function btnPress() {
   score++;
-  postToPage(score);
+ (score);
 }
-postToPage(score); // Print to the page
+
 
 createButton('decreace', btnPress2);
 //changeTitle('Clicker Game');
@@ -30,10 +33,10 @@ createButton('decreace', btnPress2);
 
 function btnPress() {
   score++;
-  postToPage(score);
+  (score);
 }
 
 function btnPress2() {
   score--;
-  postToPage(score);
+  (score);
 } 
