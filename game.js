@@ -33,7 +33,7 @@ createButton('decreace', btnPress2);
 
 function btnPress() {
   score++;
-  (score);
+  scr.edit(score);
 }
 
 function btnPress2() {
