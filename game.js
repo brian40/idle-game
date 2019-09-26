@@ -1,14 +1,12 @@
-var title = new Title('Welcome to the game')
-var score = 0;
-var button1 = new Button('OH HI MARK');
-var button2 = new Button('GROW'); 
-var button3 = new Button('DECREASE');
-var scr = new Text(score);                    
+let title = new Title('Welcome to the game')
+let score = 0;
+let button = new Button('OH HI MARK');
+let scr = new Text(score);
 
 
-changeFont('Impact');
+button.hide()
 
-setInterval(scoreIncrease, 10)
+setInterval(scoreIncrease, 1000);
 
 function scoreIncrease() { 
   score++;  
@@ -17,22 +15,25 @@ if(score > 10) {
  }
 
 }
-var title = new Title('Welcome to the Game'); // Create a title element
-var button = new Button('hello', btnPress);   // Create a button element
-var hidden = new Button('Boo!');
-//hidden.hide();
-//changes
-   // Set up a loop
+
+createButton('grow', btnPress);
+
+
 
 function btnPress() {
   score++;
  (score);
 }
 
+
+createButton('decreace', btnPress2);
+
+
+
+
 function btnPress() {
   score++;
   (score);
-  scr.edit(score);
 }
 
 function btnPress2() {
