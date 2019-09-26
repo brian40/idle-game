@@ -10,7 +10,7 @@ setInterval(scoreIncrease, 1000);
 
 function scoreIncrease() { 
   score++;  
-if(score > 10) {
+if(score > 100) {
   button.show();
  }
 
